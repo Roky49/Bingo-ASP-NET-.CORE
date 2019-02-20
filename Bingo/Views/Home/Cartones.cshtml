@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Cartones";
+
+}
+@{
+    int[,] carton = (int[,])ViewData["carton"];
+
+ }
+
+<div class=”container-fluid”>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col" colspan="9"><span>Bingo Parlante</span></th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @for (int i = 0; i < 3; i++)
+            {
+                <tr>
+                    @for (int a = 0; a < 9; a++)
+                    {
+
+                        <td>
+                            @if (carton[i, a] == 0)
+                            {
+                                <p>&nbsp;</p>
+
+                            }
+                            else
+                            {
+                                @carton[i, a].ToString();
+                            }
+
+                        </td>
+
+                    }
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+
+
+    <button>
+        <a asp-controller="Home"
+           asp-action="Cartones"
+           class="nav-link">Nuevo Cartones</a>
+    </button>
+
+
+</div>
+

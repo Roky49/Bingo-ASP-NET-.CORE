@@ -1,0 +1,24 @@
+﻿.boton {
+    padding: 10px;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+}
+
+#reglas {
+    font-size: 50px;
+    color: red;
+}
+
+#numero {
+    font-size: 200px;
+    height: 100%;
+    width: 100%;
+    color: red;
+    background-color: #337ab7;
+}
+
+.index {
+    text-align: center;
+}

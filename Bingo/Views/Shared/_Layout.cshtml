@@ -1,0 +1,67 @@
+﻿
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Mi Aplicación Core</title>
+    <environment include="Development">
+        <link href="~/css/bootstrap.css" rel="stylesheet" />
+        <link href="~/css/starter-template.css" rel="stylesheet" />
+        <link href="~/css/site.css" rel="stylesheet" />
+    </environment>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand">
+            <a asp-controller="Home"
+               asp-action="Index"
+               class="nav-link">Home</a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+
+
+                <li class="nav-item">
+                    <a asp-controller="Home"
+                       asp-action="Reglas"
+                       class="nav-link">Reglas</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Home"
+                       asp-action="Partida"
+                       class="nav-link">Nueva Partida</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-controller="Home"
+                       asp-action="Cartones"
+                       class="nav-link">Generar Cartones</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+
+        <div class="starter-template">
+            @RenderBody()
+        </div>
+    </main><!-- /.container -->
+    <!-- Bootstrap core JavaScript -->
+    <environment include="Development">
+        <script src="~/js/jquery-3.3.1.min.js"></script>
+        <script src="~/js/bootstrap.js"></script>
+
+    </environment>
+    @RenderSection("scripts", false)
+</body>
+</html>

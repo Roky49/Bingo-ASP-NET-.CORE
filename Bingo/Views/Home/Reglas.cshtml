@@ -1,0 +1,197 @@
+﻿@{
+    ViewData["Title"] = "Reglas";
+}
+
+
+<div class=”container-fluid”>
+    
+        <div class="w-100">
+            <span id="reglas">Introducción</span>
+            <p>
+                En el bingo se extraen al azar un a una hasta 90 bolas numeradas del 1 al 90.<br />
+
+                Puede haber un número ilimitado de jugadores, cada uno con al menos un cartón.<br />
+
+                Cada cartón contiene 15 números de los 90 posibles.<br />
+
+                Conforme se van extrayendo las bolas al azar, los jugadores deben tachar los números coincidentes de su cartón.<br />
+
+                Dos tipos de ganadores en cada jugada<br />
+            </p>
+            <ol>
+                <li>Gana la persona o personas que antes tachen una fila completa (Llamado línea). Se da un premio menor y el juego continúa.   </li>
+
+                <li>Gana la persona o personas que antes tachen el cartón completo (Llamado bingo). Se da un premio mayor y el juego termina.   </li>
+            </ol>
+
+            <span id="reglas">Ejemplo de Linea</span>
+            <p>
+                Con una fila tachada (Línea).<br />
+                Gana el primero que lo consiga y se continúa para bingo.<br />
+            </p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="9"><span>Carton</span></th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="btn-danger">1</td>
+                        <td class="btn-danger">12</td>
+                        <td class="btn-danger">27</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="btn-danger">52</td>
+                        <td class="btn-danger">67</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+
+                        <td>31</td>
+                        <td>45</td>
+                        <td>56</td>
+                        <td>&nbsp;</td>
+                        <td>71</td>
+                        <td>82</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>16</td>
+                        <td>29</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>59</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>90</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <hr />
+        </div>
+        <div class="w-100">
+            <span id="reglas">Crear Cartónes</span>
+            <p>
+                Los 15 números del cartón están divididos en 3 filas con 5 números cada fila.<br />
+
+                Ejemplo de cartón<br />
+            </p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="9"><span>Carton</span></th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1-10</td>
+                        <td>11-20</td>
+                        <td>21-30</td>
+                        <td>31-40</td>
+                        <td>41-50</td>
+                        <td>51-60</td>
+                        <td>61-70</td>
+                        <td>71-80</td>
+                        <td>81-90</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>12</td>
+                        <td>27</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>52</td>
+                        <td>67</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+
+                        <td>31</td>
+                        <td>45</td>
+                        <td>56</td>
+                        <td>&nbsp;</td>
+                        <td>71</td>
+                        <td>82</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>16</td>
+                        <td>29</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>59</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>90</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <span id="reglas">Ejemplo de BINGO</span>
+            <p>Con todos los números tachados (Bingo). Gana el primero que lo consiga y termina el juego.</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="9"><span>Carton</span></th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="btn-danger">1</td>
+                        <td class="btn-danger">12</td>
+                        <td class="btn-danger">27</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="btn-danger">52</td>
+                        <td class="btn-danger">67</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+
+                        <td class="btn-danger">31</td>
+                        <td class="btn-danger">45</td>
+                        <td class="btn-danger">56</td>
+                        <td>&nbsp;</td>
+                        <td class="btn-danger">71</td>
+                        <td class="btn-danger">82</td>
+                    </tr>
+                    <tr>
+                        <td class="btn-danger">5</td>
+                        <td class="btn-danger">16</td>
+                        <td class="btn-danger">29</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="btn-danger">59</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td class="btn-danger">90</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+ 
+</div>
